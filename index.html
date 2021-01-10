@@ -12,12 +12,7 @@
         clear: both;
         display: block;
       }
-
-      [class*="col-"] {
-        float: left;
-        padding: 15px;
-      }
-
+      
       html {
         font-family: "Lucida Sans", sans-serif;
       }
@@ -28,11 +23,7 @@
         padding: 15px;
         text-align: center;
       }
-      @media only screen and (max-width: 768px) {
-        .header{
-          text-align: left;
-        }
-      }
+    
 
       .categories ul {
         list-style-type: none;
@@ -42,12 +33,7 @@
         display: flex;
         justify-content: center;
       }
-      @media only screen and (max-width: 768px) {
-        .categories ul{
-          width: 100%;
-          flex-direction: column;
-        }
-      }
+   
       .categories li {
         padding: 8px;
         margin-bottom: 7px;
@@ -66,13 +52,12 @@
         width: 25%;
         background-color: #33b5e5;
       }
+      img{
+        width:15rem;
+        height: 15rem;
 
-      @media only screen and (max-width: 768px) {
-        .questions{
-          width: 100%;
-          background-color: aquamarine;
-        }
       }
+  
 
       .aside {
         padding: 15px;
@@ -88,6 +73,19 @@
         text-align: center;
         font-size: 12px;
         padding: 15px;
+      }
+      @media only screen and (max-width: 768px) {
+        .header{
+          text-align: left;
+        }
+        .categories ul{
+          width: 100%;
+          flex-direction: column;
+        }
+        .questions{
+          width: 100%;
+          background-color: aquamarine;
+        }
       }
 
       /* For desktop: */
@@ -105,26 +103,48 @@
           <li>Dogs</li>
           <li>Cats</li>
           <li>Fish</li>
+          <li>Birds</li>
         </ul>
       </div>
 
       <div class="subject">
-        <h1>The City</h1>
-        <p>
-          Chania is the capital of the Chania region on the island of Crete. The
-          city can be divided in two parts, the old town and the modern city.
-        </p>
+        <h1>Survey of pet owners in 22 countries.</h1>
+        <p>The countries included are Argentina, Australia, Belgium, Brazil, Canada, China, Czech Republic, France, Germany, Hong Kong, Italy, Japan, Mexico, Netherlands, Poland, Russia, South Korea, Spain, Sweden, Turkey, UK and USA.</p>
+       
       </div>
 
       <div class="questions right">
         <div class="aside">
-          <h2>What?</h2>
-          <p>Chania is a city on the island of Crete.</p>
-          <h2>Where?</h2>
-          <p>Crete is a Greek island in the Mediterranean Sea.</p>
-          <h2>How?</h2>
-          <p>You can reach Chania airport from all over Europe.</p>
+          <h1>Which countries have the highest percentage of pet owners</h1>
+          <p>
+            Argentina (82%), Mexico (81%) and Brazil (76%) have the highest rates of overall pet ownership among the 22 countries, with dogs being the most popular pet in all three nations.
+          </p>
+          <h2>Which countries have the lowest percentage?</h2>
+          <p>Asian countries appear to have the smallest percentage of their online population who own pets. In South Korea, just 31 percent report having any pet living with them, followed by Hong Kong at 35 percent and Japan at 37 percent.</p>
+          <h2>Who was surveyed?</h2>
+          <p>GfK conducted an online survey of over 27,000 consumers aged 15 or older in 22 countries.</p>
         </div>
+      </div>
+
+      <div>
+        <img src="./images/dog.jpg" alt="Dog">
+        <h3>Dog</h3>
+        <p>33% of pet owners have a dog. </p>
+      </div>
+      <div>
+        <img src="images/cat.jpg" alt="Cat">
+        <h3>Cat</h3>
+        <p>23% of pet owners have a cat.</p>
+      </div>
+      <div>
+        <img src="./images/fish.jpg" alt="Fish">
+        <h3>Fish</h3>
+        <p>12% of pet owners have fish.</p>
+      </div>
+      <div>
+        <img src="./images/bird.jpg" alt="Fish">
+        <h3>Birds</h3>
+        <p>6% of pet owners have a birds.</p>
       </div>
     </div>
 
